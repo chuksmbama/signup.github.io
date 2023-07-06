@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Sign up</title>
+   <style>
+      body {
+         margin: 0;
+         padding: 0;
+         font-family: sans-serif;
+         background: #243b55;
+      }
+      .sign-up {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         width: 350px;
+         padding: 40px;
+         transform: translate(-50%, -50%);
+         background: rgba(0, 0, 0, 0.5);
+         box-sizing: border-box;
+         box-shadow: 0 15px 25px #03e9f4;
+         border-radius: 50px 0px;
+      }
+      .sign-up h1 {
+         text-align: center;
+      }
+      .sign-up .user-box {
+         position: relative;
+      }
+      .sign-up .user-box input {
+         width: 100%;
+         padding: 10px 0;
+         font-size: 16px;
+         color: #fff;
+         margin-bottom: 30px;
+         border: none;
+         border-bottom: 2px solid #fff;
+         outline: none;
+         background: transparent;
+      }
+      ::placeholder {
+         color: #03e9f4;
+      }
+      .sign-up form a {
+         position: relative;
+         display: inline-block;
+         padding: 10px 20px;
+         color: #03e9f4;
+         font-size: 16px;
+         text-decoration: none;
+         text-transform: uppercase;
+         overflow: hidden;
+         transition: 0.5s;
+         margin-top: 40px;
+         letter-spacing: 2px;
+      }
+      .sign-up a:hover {
+         background: #03e9f4;
+         color: #fff;
+         border-radius: 5px;
+         box-shadow: 0 0 5px #03e9f4,
+            0 0 25px #03e9f4,
+            0 0 50px #03e9f4,
+            0 0 100px #03e9f4;
+      }
+   </style>
+</head>
+<body>
+   <div class="sign-up">
+      <h1><img src="logo.jpg" alt=""></h1>
+      <form>
+         <div class="user-box">
+            <input type="text" placeholder="First name" required>
+         </div>
+         <div class="user-box">
+            <input type="text" placeholder="Last Name" required>
+         </div>
+         <div class="user-box">
+            <input type="email" placeholder="Email" required>
+         </div>
+         <div class="user-box">
+            <input type="password" placeholder="Password" required>
+         </div>
+         <a href="#">Sign up</a>
+      </form>
+   </div>
+</body>
+</html>
